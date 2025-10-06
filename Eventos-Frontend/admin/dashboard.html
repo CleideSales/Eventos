@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Admin - Eventos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Área do Administrador</h1>
+    <nav>
+      <a href="../login.html">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section class="admin-section">
+      <h2>Cadastrar Evento</h2>
+      <form>
+        <label>Nome:<input type="text" name="nome"></label>
+        <label>Local:<input type="text" name="local"></label>
+        <label>Data:<input type="date" name="data"></label>
+        <label>Descrição:<textarea name="descricao"></textarea></label>
+        <button type="submit">Salvar Evento</button>
+      </form>
+    </section>
+
+    <section class="admin-section">
+      <h2>Cadastrar Ingressos</h2>
+      <form>
+        <label>Evento ID:<input type="number" name="evento_id"></label>
+        <label>Tipo:<input type="text" name="tipo"></label>
+        <label>Preço:<input type="number" name="preco" step="0.01"></label>
+        <label>Quantidade:<input type="number" name="quantidade"></label>
+        <button type="submit">Adicionar Ingressos</button>
+      </form>
+    </section>
+
+    <section class="admin-section">
+      <h2>Relatório de Vendas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Evento</th>
+            <th>Ingressos Vendidos</th>
+            <th>Total Arrecadado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Concerto Rock</td>
+            <td>150</td>
+            <td>R$ 9.000,00</td>
+          </tr>
+          <tr>
+            <td>Simpósio Tecnologia</td>
+            <td>80</td>
+            <td>R$ 4.000,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Sistema de Eventos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">
+        Usuário:
+        <input type="text" id="username" name="username" required />
+      </label>
+
+      <label for="password">
+        Senha:
+        <input type="password" id="password" name="password" required />
+      </label>
+
+      <label for="role">
+        Tipo de Acesso:
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Selecione o tipo de acesso</option>
+          <option value="adm">Administrador</option>
+          <option value="usuario">Usuário</option>
+        </select>
+      </label>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const role = document.getElementById("role").value;
+      if (role === "adm") {
+        window.location.href = "admin/dashboard.html";
+      } else if (role === "usuario") {
+        window.location.href = "usuario/eventos.html";
+      } else {
+        alert("Selecione um tipo de acesso.");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -182,3 +182,133 @@
         gap: 1.2em;
     }
     }
+
+    .login-container {
+  max-width: 380px;
+  margin: 5em auto;
+  background: #fff;
+  padding: 2.5em 3em 3em 3em;
+  border-radius: 30px;
+  box-shadow: 0 6px 30px #65737e20;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 1.8em;
+  font-weight: 700;
+  color: #5c6bc0;
+}
+
+.login-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 1px solid #cfd8dc;
+  border-radius: 14px;
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 1.5em;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 700;
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-container button:hover {
+  background: #48bfe3;
+}
+.admin-section {
+  background: #eceff7;
+  border-radius: 20px;
+  padding: 1.7em 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 3px 16px #65737e22;
+}
+
+.admin-section h2 {
+  margin-bottom: 1em;
+  color: #5c6bc0;
+}
+
+.admin-section form label {
+  display: block;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.admin-section input,
+.admin-section textarea {
+  width: 100%;
+  padding: 0.7em 1em;
+  border-radius: 12px;
+  border: 1px solid #cfd8dc;
+  box-sizing: border-box;
+  margin-top: 0.15em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.admin-section button {
+  background: #5c6bc0;
+  color: #fff;
+  padding: 0.8em 2.3em;
+  border: none;
+  border-radius: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-section button:hover {
+  background: #48bfe3;
+}
+
+.admin-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+.admin-section th,
+.admin-section td {
+  border: 1px solid #cfd8dc;
+  padding: 0.7em 1em;
+  text-align: left;
+}
+
+.admin-section th {
+  background-color: #d1d8f7;
+  color: #222;
+}
+
+.event-card button {
+  margin-top: auto;
+  background: #48bfe3;
+  padding: 0.8em 1.5em;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.event-card button:hover {
+  background: #5c6bc0;
+}
